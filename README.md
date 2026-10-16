@@ -2,7 +2,7 @@
 
 Portfolioseite von Yannic Doutaz, Einzelarbeit im Modul EWEB Web Engineering (BFH, HS26).
 
-- Live: https://yannicdoutaz.github.io/portfolio-page/
+- Live: https://douty1.github.io/portfolio-page/
 - Stack: reines HTML, CSS, JavaScript (keine Frameworks), gehostet auf GitHub Pages
 
 ## Struktur
