@@ -1,3 +1,6 @@
 .DS_Store
 node_modules/
 .vscode/
+
+# Bild-Originale: Ablage, nicht fürs Web. Nur optimierte Exporte in assets/img/ werden committet.
+Webseite - Bilder/
