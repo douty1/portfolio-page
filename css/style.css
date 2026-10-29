@@ -1,41 +1,79 @@
+:root {
+    /* Farben – neutral, damit die Bilder die einzigen Farbflächen sind */
+    --farbe-bg: #ffffff;
+    --farbe-bg-alt: #f4f4f2;
+    --farbe-text: #1b1b1a;
+    --farbe-text-leise: #6b6b66;
+    --farbe-linie: #dcdcd6;
+    --farbe-akzent: #3f6b4f;
+    --farbe-akzent-kontrast: #ffffff;
+
+    /* Typografie */
+    --schrift: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --text-s: 0.875rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: clamp(1.75rem, 4vw, 2.75rem);
+
+    /* Abstände – eine Skala statt Zufallswerten */
+    --abstand-xs: 0.5rem;
+    --abstand-s: 0.75rem;
+    --abstand-m: 1.25rem;
+    --abstand-l: 2rem;
+    --abstand-xl: 4rem;
+
+    /* Layout */
+    --breite-inhalt: 70ch;
+    --radius: 4px;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--schrift);
+    font-size: var(--text-m);
     line-height: 1.6;
+    color: var(--farbe-text);
+    background-color: var(--farbe-bg);
 }
 
 header,
 footer {
-    padding: 15px 20px;
+    padding: var(--abstand-s) var(--abstand-m);
 }
 
 nav a {
-    margin-right: 20px;
+    margin-right: var(--abstand-m);
 }
 
 a:hover {
-    color: green;
+    color: var(--farbe-akzent);
 }
 
 main {
-    max-width: 800px;
+    max-width: var(--breite-inhalt);
     margin: 0 auto;
-    padding: 20px;
+    padding: var(--abstand-m);
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: var(--abstand-xl);
+}
+
+h1 {
+    font-size: var(--text-xl);
+    line-height: 1.2;
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    margin-bottom: 15px;
+    border: 1px solid var(--farbe-linie);
+    border-radius: var(--radius);
+    padding: var(--abstand-xs) var(--abstand-m);
+    margin-bottom: var(--abstand-s);
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: var(--abstand-xs);
 }
 
 input {
@@ -46,10 +84,10 @@ input {
 
 button {
     display: block;
-    margin-top: 15px;
+    margin-top: var(--abstand-s);
 }
 
 footer {
     text-align: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--farbe-linie);
 }
