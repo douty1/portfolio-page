@@ -3,85 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio von Yannic Doutaz</title>
-    <meta name="description" content="Portfolio von Yannic Doutaz: Projekte, Skills und Kontakt.">
+    <title>Yannic Doutaz · Technik und Gestaltung</title>
+    <meta name="description" content="Portfolio von Yannic Doutaz: Teamleiter Technischer Support, Student Digital Business &amp; AI an der BFH, Fotografie und Video.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#start">Startseite</a>
+            <a href="#start">Start</a>
             <a href="#ueber-mich">Über mich</a>
             <a href="#projekte">Projekte</a>
+            <a href="galerie.html">Galerie</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
     </header>
 
     <main>
         <section id="start">
-            <h1>Herzlich Willkommen</h1>
-            <p>Mein Name ist Yannic und dies wird meine Portfolio-Seite.</p>
+            <h1>Yannic Doutaz</h1>
+            <p class="hero-unterzeile">Teamleiter Technischer Support und Student Digital Business &amp; AI an der BFH.</p>
+            <p>Ich verbinde Technik und Gestaltung: im Beruf mit Support-Prozessen und Web, in der Freizeit mit Kamera und Schnitt.</p>
+            <!-- Porträtfoto kommt hierhin, sobald es gemacht ist (4:5) -->
+            <p class="hero-aktionen">
+                <a href="#projekte">Projekte ansehen</a>
+                <a href="#kontakt">Kontakt aufnehmen</a>
+            </p>
         </section>
 
         <section id="ueber-mich">
             <h2>Über mich</h2>
-            <p>Technical Support Lead und Student Digital Business &amp; AI an der BFH. Diese Seite entsteht im Modul Web Engineering und wächst über das Semester.</p>
-        </section>
-
-        <section id="projekte">
-            <h2>Projekte</h2>
-            <article class="card">
-                <h3>Projekt 1</h3>
-                <p>Kurzbeschreibung folgt.</p>
-            </article>
-            <article class="card">
-                <h3>Projekt 2</h3>
-                <p>Kurzbeschreibung folgt.</p>
-            </article>
-            <article class="card">
-                <h3>Projekt 3</h3>
-                <p>Kurzbeschreibung folgt.</p>
-            </article>
+            <p>Ich komme aus Allmendingen bei Thun und habe meine Lehre als Mediamatiker beim Bundesamt für Informatik und Telekommunikation (BIT) gemacht. Seit fünf Jahren arbeite ich bei myls, seit zweieinhalb Jahren als Teamleiter des technischen Supports. Daneben studiere ich Digital Business &amp; AI an der Berner Fachhochschule.</p>
+            <p>Was mich antreibt, ist die Verbindung von Technik und Gestaltung. Im Beruf heisst das: Abläufe so bauen, dass sie für Kundinnen, Kunden und Team funktionieren. Privat fotografiere und filme ich, am liebsten draussen in der Natur und bei Wildtieren, oft bei Sonnenaufgang.</p>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
+
+            <h3>Web und Technik</h3>
             <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>PHP / WordPress</li>
-                <li>Zoho Desk, Sprints, Analytics</li>
-                <li>Google Business Profile</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>PHP und WordPress</li>
+                <li>Git</li>
+            </ul>
+
+            <h3>Tools und Plattformen</h3>
+            <ul>
+                <li>Zoho Desk</li>
+                <li>Notion, Figma</li>
+                <li>Lightroom, Videoschnitt</li>
+            </ul>
+
+            <h3>Methoden</h3>
+            <ul>
+                <li>Support- und Prozessgestaltung</li>
+                <li>UX und Testing</li>
+                <li>Shooting- und Projektplanung</li>
             </ul>
         </section>
 
-        <section id="hobbys">
-            <h2>Hobbys</h2>
-            <ul>
-                <li>Fotografieren</li>
-                <li>Squashen</li>
-                <li>Jagd</li>
-                <li>Bungee-Surfen</li>
-                <li>Rennvelo</li>
-            </ul>
+        <section id="projekte">
+            <h2>Projekte</h2>
+            <p>Eine Auswahl an Aufträgen aus Fotografie und Video.</p>
+
+            <article class="card">
+                <h3><a href="hauptner-coverfoto.html">Coverfoto Herbstkatalog</a></h3>
+                <p class="projekt-meta">Hauptner Jagd · Kundenauftrag · 2022</p>
+                <p>Das Titelbild für den Herbstkatalog von Hauptner Jagd in der Schweiz und in Deutschland: zwei Jäger auf der Pirsch im Haslimoos, im Morgennebel bei Sonnenaufgang.</p>
+                <p><a href="hauptner-coverfoto.html">Projekt ansehen</a></p>
+            </article>
+
+            <article class="card">
+                <h3><a href="reka-abschiedsfilm.html">Abschiedsfilm</a></h3>
+                <p class="projekt-meta">Reka · Kundenauftrag · 2024</p>
+                <p>Ein einstündiger Dankesfilm zur Pensionierung einer langjährigen Person bei Reka, als Überraschung im Kinosaal vor über 100 Gästen gezeigt.</p>
+                <p><a href="reka-abschiedsfilm.html">Projekt ansehen</a></p>
+            </article>
         </section>
 
         <section id="kontakt">
             <h2>Kontakt</h2>
-            <p><a href="https://github.com/douty1">GitHub</a></p>
+            <p>Fragen zu einem Projekt oder eine Anfrage? Schreib mir über das Formular oder direkt an <a href="mailto:doutaz.yannic@gmail.com">doutaz.yannic@gmail.com</a>.</p>
+
+            <!-- Versand über Formspree folgt: action-Attribut ergänzen, sobald der Endpoint eingerichtet ist. -->
             <form>
-                <label for="name">Name:</label>
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">E-Mail:</label>
+                <label for="email">E-Mail</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type="submit">Senden</button>
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" rows="6" minlength="10" required></textarea>
+
+                <button type="submit">Nachricht senden</button>
             </form>
+
+            <p class="datenschutz"><small>Die Angaben werden über den Dienst Formspree übermittelt und nur zur Beantwortung deiner Anfrage verwendet.</small></p>
         </section>
     </main>
 
     <footer>
-        <small>&copy; 2026 Yannic Doutaz. Alle Rechte vorbehalten.</small>
+        <small>&copy; 2026 Yannic Doutaz · Fotos und Videos: Yannic Doutaz</small>
     </footer>
 </body>
 </html>
